@@ -5,6 +5,8 @@
     xwayland-satellite
     wl-clipboard
     brightnessctl
+    bluez
+    blueman
 
     alacritty
     fuzzel

@@ -17,6 +17,11 @@
   networking.hostName = "medium-guy";
   networking.networkmanager.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = true;
+  };
+
   time.timeZone = "Europe/London";
 
   i18n.defaultLocale = "en_GB.UTF-8";
@@ -54,6 +59,8 @@
     neovim
     fastfetch
   ];
+
+  services.blueman.enable = true;
 
   system.stateVersion = "26.11";
 }

@@ -32,7 +32,7 @@ layout {
         on
 
         width 1.25
-  	    active-color "#79814f"
+  	    active-color "#d7c483"
         inactive-color "#505050"
     }
 
