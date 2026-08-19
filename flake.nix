@@ -22,7 +22,20 @@
         specialArgs = { inherit inputs; };
 
         modules = [
-          ./configuration.nix
+          ./hosts/medium-guy/configuration.nix
+          hjem.nixosModules.default
+          home-manager.nixosModules.home-manager
+          {
+            home-manager.users.alasdair = import ./home.nix;
+          }
+        ];
+      };
+      nixosConfigurations.large-guy = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          ./hosts/large-guy/configuration.nix
           hjem.nixosModules.default
           home-manager.nixosModules.home-manager
           {
