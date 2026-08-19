@@ -18,7 +18,6 @@ in
       "fuzzel".source = "${dotfiles}/fuzzel";
       "nvim".source = "${dotfiles}/nvim";
       "fastfetch".source = "${dotfiles}/fastfetch";
-      "git".source = "${dotfiles}/git";
     };
   };
 }

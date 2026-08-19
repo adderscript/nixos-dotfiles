@@ -34,9 +34,5 @@
       eval "$(starship init bash)"
       fastfetch
     '';
-
-    profileExtra = ''
-      # Commands for login shells
-    '';
   };
 }

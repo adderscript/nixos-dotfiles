@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, inputs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -13,6 +13,7 @@
     swaybg
     starship
 
+    inputs.zen-browser.packages."${system}".default
     tor-browser
   ];
 
@@ -24,5 +25,4 @@
   services.xserver.enable = true;
 
   programs.niri.enable = true;
-  programs.firefox.enable = true;
 }

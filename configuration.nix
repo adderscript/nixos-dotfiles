@@ -55,6 +55,5 @@
     fastfetch
   ];
 
-  home-manager.users.alasdair = import ./home.nix;
   system.stateVersion = "26.11";
 }

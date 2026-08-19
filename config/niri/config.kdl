@@ -67,6 +67,11 @@ prefer-no-csd
 screenshot-path "~/Pictures/Screenshots/Screenshot from %Y-%m-%d %H-%M-%S.png"
 
 window-rule {
+    match app-id="zen-beta"
+    open-maximized true
+}
+
+window-rule {
     geometry-corner-radius 0
     clip-to-geometry true
     draw-border-with-background false
@@ -77,6 +82,7 @@ binds {
 
     Mod+Return hotkey-overlay-title="Open terminal" { spawn "alacritty"; }
     Mod+Space hotkey-overlay-title="Run fuzzel" { spawn "fuzzel"; }
+    Mod+B hotkey-overlay-title="Open zen" { spawn "zen-beta"; }
 
     XF86AudioRaiseVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1+ -l 1.0"; }
     XF86AudioLowerVolume allow-when-locked=true { spawn-sh "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.1-"; }
