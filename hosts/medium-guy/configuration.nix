@@ -3,12 +3,12 @@
 {
   imports = [
     ./hardware.nix
-    ./hjem.nix
+    ../../hjem.nix
 
-    ./modules/desktop.nix
-    ./modules/development.nix
-    ./modules/neovim.nix
-    ./modules/syncthing.nix
+    ../../modules/desktop.nix
+    ../../modules/development.nix
+    ../../modules/neovim.nix
+    ../../modules/syncthing.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
@@ -62,5 +62,9 @@
 
   services.blueman.enable = true;
 
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
   system.stateVersion = "26.11";
 }

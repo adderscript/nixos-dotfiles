@@ -23,7 +23,7 @@
     enable = true;
 
     shellAliases = {
-      rebuild = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles";
+      rebuild = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#medium-guy";
     };
 
     historySize = 10000;
