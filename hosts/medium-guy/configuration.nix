@@ -7,8 +7,10 @@
 
     ../../modules/desktop.nix
     ../../modules/development.nix
+    ../../modules/gaming.nix
     ../../modules/neovim.nix
     ../../modules/syncthing.nix
+    ../../modules/bloat.nix
   ];
 
   boot.loader.systemd-boot.enable = true;
